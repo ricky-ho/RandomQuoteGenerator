@@ -1,24 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import QuoteBox from "./components/QuoteBox";
 
 function App() {
+  const COLORS = [
+    "#16a085",
+    "#27ae60",
+    "#2c3e50",
+    "#f39c12",
+    "#e74c3c",
+    "#9b59b6",
+    "#FB6964",
+    "#342224",
+    "#472E32",
+    "#BDBB99",
+    "#77B1A9",
+    "#73A857",
+    "#957bea",
+    "#2083C4",
+    "#D30FD0",
+    "#BBC51E",
+    "#FF9713",
+    "#D96B30",
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <QuoteBox colors={COLORS} />
     </div>
   );
 }
